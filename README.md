@@ -161,5 +161,5 @@ Before creating a public GitHub release, run the local release checklist in `REL
 For NuGet packaging, pass your final repository URL as an MSBuild property:
 
 ```powershell
-dotnet pack src/Gridly/Gridly.csproj -c Release -o artifacts/nuget /p:GridlyRepositoryUrl=https://github.com/<owner>/Gridly
+dotnet pack src/Gridly/Gridly.csproj -c Release -o artifacts/nuget /p:GridlyRepositoryUrl=https://github.com/Manisa79/Gridly
 ```
