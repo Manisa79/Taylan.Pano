@@ -1,0 +1,16 @@
+name: Performance report
+description: Report scrolling, filtering or rendering performance issues
+labels: [performance]
+body:
+  - type: input
+    id: rows
+    attributes:
+      label: Row/card count
+      placeholder: 100000
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario
+      description: Describe dataset size, columns, images and view mode.
+    validations:
+      required: true

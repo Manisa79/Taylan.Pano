@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a Gridly bug
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Gridly version
+      placeholder: 1.0.52.2
+  - type: dropdown
+    id: viewmode
+    attributes:
+      label: View mode
+      options:
+        - Details
+        - List
+        - Dashboard
+        - DetailCard
+        - Poster
+        - Gallery
+        - MediaTile
+        - FilmStrip
+        - Other
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue and include screenshots if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      placeholder: 1. Open...

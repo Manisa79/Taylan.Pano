@@ -1,0 +1,21 @@
+name: Theme / accessibility issue
+description: Report unreadable text, contrast or theme problems
+labels: [theme, accessibility]
+body:
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      options:
+        - Light
+        - Dark
+        - System
+        - High Contrast
+        - Custom
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Include a screenshot and the view mode.
+    validations:
+      required: true
